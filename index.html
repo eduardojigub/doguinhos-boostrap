@@ -21,8 +21,8 @@
     />
     <title>Doguinho's App</title>
   </head>
-  <body>
-    <div class="container">
+  <body data-bs-spy="scroll" data-bs-target="#menu">
+    <div id="topo" class="container">
       <header
         class="bg-light sticky-top d-flex flex-wrap justify-content-center py-3 mb-5 border-bottom"
       >
@@ -32,14 +32,14 @@
         >
           <span class="fs-4 fw-bold"><i class="mdi mdi-dog"></i>Doguinhos</span>
         </a>
-        <ul class="nav nav-pills">
+        <ul id="menu" class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="#topo" class="nav-link active" aria-current="page">Home</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Preços</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+          <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li class="nav-item"><a href="#precos" class="nav-link">Preços</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
         </ul>
       </header>
       <section class="mb-5">
@@ -116,7 +116,7 @@
           <!-- /.col-lg-4 -->
         </div>
       </section>
-      <section id="precos">
+      <section id="precos" class="pt-5 mt-5">
         <div class="pricing-header pt-5 mt-5 text-center">
           <h2 class="display-5 fw-bold">Preços</h2>
           <p class="fs-5 mb-5 text-muted">
@@ -300,7 +300,7 @@
           </div>
         </div>
       </section>
-      <section id="contato" class="py-5 my-5">
+      <section id="contato" class="">
         <div class="row pt-5 mt-5">
             <div class="col-12 text-center">
               <h2 class="display-5 fw-bold">Contato</h2>
